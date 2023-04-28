@@ -1,4 +1,4 @@
-package entity;
+package org.example.entity;
 
 import lombok.*;
 import javax.persistence.*;
@@ -32,20 +32,12 @@ public class Student {
         this.groupStudent = group;
     }
 
-//    public void addCourse(Course course){
-//        if(course == null){
-//            throw new NullPointerException("It was putting nullable course!!!");
-//        }
-//        courses.add(course);
-//        course.addStudent(this);
-//    }
     public void addStudentCourses(StudentCourses sc){
         if(sc == null){
             throw new NullPointerException("It was putting nullable sc!!!");
         }
         studentCourses.add(sc);
     }
-
 
     @Override
     public String toString() {

@@ -1,12 +1,12 @@
-package main;
+package org.example.main;
 
-import entity.Course;
-import entity.Student;
-import entity.StudentCourses;
-import enums.TypeCourse;
+import org.example.entity.Course;
+import org.example.entity.Student;
+import org.example.entity.StudentCourses;
+import org.example.enums.TypeCourse;
+import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import util.HibernateUtil;
 
 import java.sql.Timestamp;
 import java.util.logging.Level;
